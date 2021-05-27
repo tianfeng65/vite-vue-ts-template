@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit --skipLibCheck && vite build",
-    "serve": "vite preview",
-    "prepare": "husky install"
+    "serve": "vite preview"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
@@ -17,6 +16,8 @@
     "vuex": "^4.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/node": "^15.6.1",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
