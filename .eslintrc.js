@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: ['vue', '@typescript-eslint'],
   rules: {
+    'import/no-unresolved': 0,
     'vue/no-multiple-template-root': 0,
     'no-param-reassign': ['error', { props: false }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
@@ -26,12 +27,5 @@ module.exports = {
         tsx: 'never'
       }
     ]
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
   }
 }

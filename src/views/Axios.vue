@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import fetchDogImg from '../api'
+import fetchDogImg from '@/api'
 
 export default defineComponent({
   name: 'Axios',

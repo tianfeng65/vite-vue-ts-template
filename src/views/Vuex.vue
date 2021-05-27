@@ -15,7 +15,6 @@ export default defineComponent({
   setup() {
     const store = useStore()
     const handleClick = () => {
-      console.log('123')
       store.commit('increment')
     }
     return {
